@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* border: 1px solid black; */
+        /* width: 80vw; */
+        margin: 0px 0px 0px 0px;
+        height: 72px;
+        /* background-color: aqua; */
+    }
+    nav .s2{
+        display: flex;
+        gap: 20px;
+        padding: 0px 23px 0px 0px;
+    }
+    
+    span img{
+        padding: 13px 0px 0px 10px;
+        
+    }
+    .intro{
+        list-style: none;
+        border: 1px solid rgb(88, 26, 220);
+        background-color: rgb(88, 26, 220);
+        width: 100vw;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        padding: 17px 20px;
+        /* border-radius: 100px; */
+    }
+    .intro .l1{
+        list-style: none;
+
+        font-size: x-large;
+        font-style: normal;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+    }
+    .intro .l2{
+        list-style: none;
+
+        font-size:medium;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(133, 130, 130);
+    }
+    .h1{
+        padding: 19px 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:x-large;
+    }
+    .grid{
+        margin:auto;
+        padding: 34px 70px;
+        gap: 158px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /* border: 1px solid black; */
+    }
+    .grid .items{
+        font-size: larger;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+        font-weight: 100;
+        color: rgb(88, 87, 87);
+        display: flex;
+        /* gap: 10px; */
+        align-items: center;
+        justify-content: space-around;
+        /* border: 1px solid black; */
+        width: 19vw;
+        height: 21vh;
+        border-radius: 20px;
+        box-shadow: 1px 1px 12px  rgb(60, 52, 46);
+        background-color: aliceblue;
+        /* background-image: url("Aadhaar_Logo.svg.webp"); */
+    }
+    .items img{
+        padding: 0px 0px 0px 18px;
+    }
+    .items ul li{
+        list-style: none;
+    }
+    .orange{
+        display: flex;
+        background-color: rgb(209, 94, 36);
+        border-radius: 15px;
+        width: 90vw;
+        margin: auto;
+        height: 21vh;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        font-size: larger;
+        align-items: center;
+        justify-content: space-around;
+    }
+    @media only screen and (max-width: 528px){
+        body{
+            flex-direction: column;
+            .grid{
+                flex-wrap: wrap;
+            }
+            .grid .items{
+                flex-direction: row;
+            }
+        }
+    }    
+</style>
+<body>
+    <div class="box">
+        <div class="nav">
+            <nav>
+                <span class="s1">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/DigiLocker.svg/768px-DigiLocker.svg.png" alt="" width="150">
+                </span>
+                <span class="s2">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/computers-mobile-hardware/scan-icon.png" alt="" width="25px">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREXURqo-Yk_5OKKI05jlJc8jAuWphXIopOiVbnt1ghuA&s" alt="" width="25px">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png" alt="" width="25px">
+                </span>
+            </nav>
+        </div>
+        <div class="intro">
+            <ul>
+                <li class="l1">Hello, Ahad</li><br>
+                <li class="l2">Digilocker'issued Document' are at par</li> <li class="l2">with original document as per IT ACT, 2000</li>
+            </ul>
+        </div>
+        <div class="h1">Document you might need</div>
+        <div class="grid">
+            <div class="items">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Aadhaar_Logo.svg/1200px-Aadhaar_Logo.svg.png" alt="" width="75px"><span><ul>
+                    <li>Aadhaar</li>
+                    <li>97XX XXXX XX67</li>
+                </ul></span>
+            </div>
+            <div class="items">
+                <img src="https://cf-media.api-setu.in/logo/doctypes/DRVLC.png" alt="" width="60px">
+                <span><ul>
+                    <li>Driving License</li>
+                    <li>LLX48X39</li>
+                </ul></span>
+            </div>
+            <div class="items">
+                <img src="https://cf-media.api-setu.in/logo/doctypes/RVCER.png" alt="" width="60px">
+                <span>
+                    <ul>
+                        <li>Registration</li>
+                        <li>of vehicle</li>
+                    </ul>
+                </span>
+            </div>
+        </div> 
+        <div class="h1">New in DigiLocker</div> 
+        <div class="orange">
+            <span>
+                Now get Cowin vaccine pass
+            </span>
+            <span><img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/Logo_of_CoWIN.svg/640px-Logo_of_CoWIN.svg.png" alt="" width="260px"></span>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the elements
+            var orangeSection = document.querySelector('.orange');
+            var orangeText = orangeSection.querySelector('span');
+
+            // Add click event listener to toggle visibility
+            orangeText.addEventListener('click', function() {
+                orangeSection.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
